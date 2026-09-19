@@ -14,18 +14,15 @@ for score in scores:
     if score >=50:
         print(f"{score}:Pass")
         count += 1
+    else:
+        print(f"{score}:Fail")
 print(f"count of passing scores: {count}")
-if score < 50:
-    print(f"{score}:Fail")
 print(f"count of failing scores: {len(scores) - count}")
 
 # Addition of all scores #
-total =sum(scores)
+total = sum(scores)
 print(f"Total: {total}")
 
 # Average #
-avg= total/count
-print(f"Average: {avg}")
-round(avg, 1)
-
-
+avg = total/len(scores)
+print(f"Average: {round(avg, 1)}")
